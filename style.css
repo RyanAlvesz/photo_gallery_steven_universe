@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 125px 1fr 125px;
+    margin: 0% 23% 0% 23%;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Lato', sans-serif;
+    background-image: url(./img/fundo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* TÍTULO */
+
+
+header {
+    display: grid;
+}
+
+.titulo{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+img[alt~=logo]{
+    height: 8.5em;   
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 10px;
+}
+
+
+/* CONTAINER DE CIMA */
+
+
+.faixa__principal {
+    display: grid;
+    grid-template-areas:
+        "principal secundaria"
+        "principal secundaria";
+    gap: 10px;
+    grid-template-columns: 8fr 5fr;
+}
+
+
+
+/* IMAGEM DA ESQUERDA */
+
+
+.img__principal {
+    grid-area: principal;
+    background-image: url(./img/img10_su.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: end start;
+}
+
+
+/* FAIXA DE INFORMAÇÕES */
+
+
+.faixa__informacoes {
+    background-color: rgb(242, 172, 197, 0.8);  
+    height: 2em;
+    width: 100%;
+    display: grid;
+    opacity: 0;
+    transition-duration: .2s;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.informacoes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-size: 0.7rem;
+}
+
+/* ANIMAÇÃO DA FAIXA DE INFORMAÇÕES */
+
+
+div[alt~="img"]:hover{
+    transform: scale(1.1);
+}
+
+div[alt~="img"]:hover > .faixa__informacoes{
+    opacity: 1;
+}
+
+.informacoes a:hover{
+    text-decoration: underline;
+}
+
+img[alt~="like"]{
+
+}
+
+/* ESTILIZAÇÃO FAIXA DE INFORMAÇÕES GERAL */
+
+
+div[alt~="img"] > .faixa__informacoes{
+    place-self: end start;
+}
+
+
+/* CONTAINER DA DIREITA */
+
+
+.img__secundaria {
+    grid-area: secundaria;
+    display: grid;
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+/* IMGAGENS DO CONTAINER DA DIRETA */
+
+.img__secundaria > div{
+    display: grid;
+}
+
+.img1 {
+    background-image: url(./img/img1_su.jpg);
+    background-size: cover;
+    grid-area: img1;
+
+}
+
+.img2 {
+    background-image: url(./img/img3-2_su.jpg);
+    background-size: cover;
+    grid-area: img2;
+
+}
+
+.img3 {
+    background-image: url(./img/img3_su.jpg);
+    background-size: cover;
+    grid-area: img3;
+}
+
+.img4 {
+    background-image: url(./img/img4_su.jpg);
+    background-size: cover;
+    grid-area: img4;
+}
+
+
+/* CONTAINER DE BAIXO */
+
+
+.faixa__secundaria {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+
+/* IMAGENS DO CONTAINER DE BAIXO */
+
+
+.faixa__secundaria > div{
+    display: grid;
+}
+
+
+.img5 {
+    background-image: url(./img/img9_su.png);
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url(./img/img12_su.jpg);
+    background-size: cover;
+}
+
+.img7 {
+    background-image: url(./img/img11_su.jpg);
+    background-size: cover;
+}
+
+
+/* ANIMAÇÕES DAS IMAGENS */
+
+
+div[alt~="img"]:hover > .faixa__informacoes{
+    opacity: 1;
+}
+
+div[alt~="img"]:hover{
+    transform: scale(1.2);
+}
+
+
+/* BOTÃO VER MAIS */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ver__mais {
+    border-radius: 50px;
+    background-color: #bd848d;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.ver__mais * {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ANIMAÇÃO DO BOTÃO */
+
+
+.ver__mais:hover {
+    background-color: #cc9ca2;
+    border-style: solid;
+    border-color: #bd848d;
+    transform: scale(1.1);
+}
+
