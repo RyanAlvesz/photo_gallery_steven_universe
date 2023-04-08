@@ -98,11 +98,16 @@ main {
     font-size: 0.7rem;
 }
 
+div[alt~="img"] > .faixa__informacoes{
+    place-self: end start;
+}
+
+
 /* ANIMAÇÃO DA FAIXA DE INFORMAÇÕES */
 
 
-div[alt~="img"]:hover{
-    transform: scale(1.1);
+div[alt~="imgp"]:hover > .faixa__informacoes{
+    opacity: 1;
 }
 
 div[alt~="img"]:hover > .faixa__informacoes{
@@ -111,17 +116,6 @@ div[alt~="img"]:hover > .faixa__informacoes{
 
 .informacoes a:hover{
     text-decoration: underline;
-}
-
-img[alt~="like"]{
-
-}
-
-/* ESTILIZAÇÃO FAIXA DE INFORMAÇÕES GERAL */
-
-
-div[alt~="img"] > .faixa__informacoes{
-    place-self: end start;
 }
 
 
@@ -215,6 +209,10 @@ div[alt~="img"]:hover > .faixa__informacoes{
 
 div[alt~="img"]:hover{
     transform: scale(1.2);
+}
+
+div[alt~="imgp"]:hover{
+    transform: scale(1.1);
 }
 
 
