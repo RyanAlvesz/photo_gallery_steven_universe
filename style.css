@@ -58,14 +58,17 @@ main {
 }
 
 
-
 /* IMAGEM DA ESQUERDA */
 
+.center > div{
+    background-position: center;
+}
 
 .img__principal {
     grid-area: principal;
     background-image: url(./img/img10_su.jpg);
     background-size: cover;
+    ;
     display: grid;
     place-items: end start;
 }
@@ -252,3 +255,28 @@ footer {
     transform: scale(1.1);
 }
 
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width:768px){
+
+    body{
+        margin: 0px 0px 0px 0px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img[alt~=imgp]{
+        width: 100%;
+        height: 33vh;
+    }
+
+    img[alt~=img]{
+        width: 100%;
+        height: 33vh;
+    }
+}
