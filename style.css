@@ -9,7 +9,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: 125px 1fr 125px;
-    margin: 0% 23% 0% 23%;
+    margin: 0px 350px 0px 350px;
     font-family: 'Architects Daughter', cursive;
     font-family: 'Lato', sans-serif;
     background-image: url(./img/fundo3.png);
